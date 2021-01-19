@@ -4,10 +4,11 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 3.0"
     }
+    random = {
+      source = "hashicorp/random"
+    }
   }
-}
 
-terraform {
   backend "remote" {
     organization = "readers"
 
