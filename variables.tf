@@ -19,7 +19,7 @@ variable "database_name" {
 variable "database_username" {
   type        = string
   description = "The root username for MySQL"
-  default     = "root"
+  default     = "admin"
 }
 
 variable "database_password" {
