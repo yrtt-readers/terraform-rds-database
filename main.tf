@@ -7,6 +7,16 @@ terraform {
   }
 }
 
+terraform {
+  backend "remote" {
+    organization = "readers"
+
+    workspaces {
+      name = "bookclub-terraform-automation"
+    }
+  }
+}
+
 # Configure the AWS Provider
 provider "aws" {
   region  = var.aws_region

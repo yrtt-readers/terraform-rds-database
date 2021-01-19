@@ -27,3 +27,8 @@ variable "database_password" {
   description = "The password for the MySQL user - make sure this is a good password"
   default     = "getAPassword"
 }
+
+variable "name_length" {
+  type    = number
+  default = 5
+}
